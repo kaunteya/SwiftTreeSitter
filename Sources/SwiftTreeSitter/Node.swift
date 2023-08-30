@@ -9,7 +9,7 @@
 import Foundation
 import tree_sitter
 
-public struct Node {
+public class Node: NSObject {
     let internalNode: TSNode
 
     init?(internalNode: TSNode) {
@@ -19,19 +19,10 @@ public struct Node {
 
         self.internalNode = internalNode
     }
-}
 
-extension Node: CustomDebugStringConvertible {
-    public var debugDescription: String {
-        let typeName = nodeType ?? "unnamed"
-
-        return "<\(typeName) range: \(range) childCount: \(childCount)>"
-    }
-}
-
-extension Node: Equatable {
-    public static func == (lhs: Node, rhs: Node) -> Bool {
-        return ts_node_eq(lhs.internalNode, rhs.internalNode)
+    public override func isEqual(_ object: Any?) -> Bool {
+        guard let otherNode = object as? Node else { return false }
+        return ts_node_eq(internalNode, otherNode.internalNode)
     }
 }
 
@@ -176,7 +167,7 @@ extension Node {
         let upper = byteRange.upperBound
 
         let n = ts_node_descendant_for_byte_range(internalNode, lower, upper)
-        
+
         return Node(internalNode: n)
     }
 }
