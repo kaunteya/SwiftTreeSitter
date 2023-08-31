@@ -74,7 +74,7 @@ Tree-sitter language parsers are separate projects, and you'll probably need at 
 | [Make](https://github.com/alemuller/tree-sitter-make) | | | |
 | [Markdown](https://github.com/MDeiml/tree-sitter-markdown) | | ✅ | ✅ |
 | [Markdown](https://github.com/mattmassicotte/tree-sitter-markdown) | ✅ | | |
-| [OCaml](https://github.com/tree-sitter/tree-sitter-ocaml) | | | |
+| [OCaml](https://github.com/tree-sitter/tree-sitter-ocaml) | | ✅ | ✅ |
 | [Pascal](https://github.com/Isopod/tree-sitter-pascal) | | | |
 | [Perl](https://github.com/ganezdragon/tree-sitter-perl) | | ✅ | ✅ |
 | [PHP](https://github.com/tree-sitter/tree-sitter-php) | ✅ | ✅ | ✅ |
@@ -95,7 +95,7 @@ Tree-sitter language parsers are separate projects, and you'll probably need at 
 | [TOML](https://github.com/mattmassicotte/tree-sitter-toml/feature/spm) | | ✅ | |
 | [Tree-sitter query language](https://github.com/nvim-treesitter/tree-sitter-query) | | ✅ | ✅ |
 | [Typescript](https://github.com/tree-sitter/tree-sitter-typescript) | | ✅ | ✅ |
-| [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) | | | |
+| [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) | | ✅ | ✅ |
 | [Vue](https://github.com/ikatyang/tree-sitter-vue) | | | |
 | [YAML](https://github.com/mattmassicotte/tree-sitter-yaml/tree/feature/spm) | | ✅ | |
 | [Zig](https://github.com/maxxnino/tree-sitter-zig) | ✅ | ✅ | ✅ |
